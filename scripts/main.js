@@ -1,8 +1,8 @@
-openInfo(event, "Client"); // Display the current tab
-
 // This function is called when any of the tab is clicked
 // It is adapted from https://www.w3schools.com/howto/howto_js_tabs.asp
 function openInfo(evt, tabName) {
+	// Hide Client Tab
+	document.getElementById("Client").style.display = "none";
 	// Get all elements with class="tabcontent" and hide them
 	tabcontent = document.getElementsByClassName("tabcontent");
 	for (i = 0; i < tabcontent.length; i++) {
