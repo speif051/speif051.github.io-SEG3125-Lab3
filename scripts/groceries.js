@@ -96,7 +96,7 @@ function restrictListProducts(prods, restriction) {
 		else if ((document.getElementById("Organic").checked == true) && (prods[i].organic == true)){
 			product_names.push(prods[i].name);
 		}
-		else if (restriction == "None"){
+		else{
 			product_names.push(prods[i].name);
 		}
 	}
