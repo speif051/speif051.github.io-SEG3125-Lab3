@@ -1,3 +1,5 @@
+openInfo(event,'Client');
+
 // This function is called when any of the tab is clicked
 // It is adapted from https://www.w3schools.com/howto/howto_js_tabs.asp
 
