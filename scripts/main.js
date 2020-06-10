@@ -57,6 +57,7 @@ function populateListProductChoices(slct1, slct2) {
 		s2.appendChild(label);
 		
 		// create a image for the checkbox
+		label.appendChild(document.getElementById(productName);
 		s2.appendChild(document.getElementById(productName);
 
 		
