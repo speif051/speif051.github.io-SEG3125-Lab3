@@ -3,7 +3,7 @@
 
 function openInfo(evt, tabName) {
 
-	document.getElementById("Client").style.display = "none";
+	document.getElementById("start").style.display = "none";
 	// Get all elements with class="tabcontent" and hide them
 	tabcontent = document.getElementsByClassName("tabcontent");
 	for (i = 0; i < tabcontent.length; i++) {
