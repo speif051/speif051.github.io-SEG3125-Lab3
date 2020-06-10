@@ -2,9 +2,6 @@
 // It is adapted from https://www.w3schools.com/howto/howto_js_tabs.asp
 
 function openInfo(evt, tabName) {
-	
-	document.getElementsByClassName("tablinks").style.display = "none";
-
 	document.getElementById("start").style.display = "none";
 	// Get all elements with class="tabcontent" and hide them
 	tabcontent = document.getElementsByClassName("tabcontent");
