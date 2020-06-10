@@ -9,7 +9,7 @@
 <body>
 	
 <div class="start">
-  <button class="Begin" onclick="openInfo(event, "Client")">Begin</button>
+  <button class="Begin" onclick="openInfo(event, 'Client')">Begin</button>
 </div>
 
 <!-- Tab content -->
@@ -35,7 +35,7 @@
 	<input type="radio" id="OrganicFalse" name="Organic" value="OrganicFalse">
 		<label for="OrganicFalse">False</label><br>
 	
-	<button id="Next" type="button" class="block" onclick="openInfo(event, "Products")">
+	<button id="Next" type="button" class="block" onclick="openInfo(event, 'Products')">
 		Next.
 	</Next>
 </div>
@@ -59,10 +59,10 @@
   <p>We preselected products based on your Preferences.</p>
 	 Choose items to buy:
 	 <div id="displayProduct"></div>
-	<button id="Prev" type="button" class="block" onclick="openInfo(event, "Client")">
+	<button id="Prev" type="button" class="block" onclick="openInfo(event, 'Client')">
 		Previous.
 	</button>
-	<button id="Next" type="button" class="block" onclick="openInfo(event, "Cart")">
+	<button id="Next" type="button" class="block" onclick="openInfo(event, 'Cart')">
 		Next.
 	</Next>
 </div>
@@ -71,7 +71,7 @@
   <h3>Cart</h3>
   <p>Here is your cart.</p>
   <div id="displayCart"></div>
-	<button id="Prev" type="button" class="block" onclick="openInfo(event, "Products")">
+	<button id="Prev" type="button" class="block" onclick="openInfo(event, 'Products')">
 		Previous.
 	</button>
 </div>
