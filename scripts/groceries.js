@@ -100,7 +100,13 @@ function restrictListProducts(prods, restriction) {
 			product_names.push(prods[i].name);
 		}
 	}
-	return product_names;
+	let unique = [];
+	for (let i=0; i<product_names.length; i++){
+		if unique.indexOf(product_names[i])===-1){
+			unique.push(product_names[i]);
+		}
+	}
+	return unique;
 }
 
 // Calculate the total price of items, with received parameter being a list of products
