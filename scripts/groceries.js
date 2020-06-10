@@ -87,26 +87,11 @@ var products = [
 function restrictListProducts(prods, restriction) {
 	let product_names = [];
 	for (let i=0; i<prods.length; i+=1) {
-		if ((document.getElementById("Vegetarian").checked == true) && (prods[i].vegetarian == true)){
-			product_names.push(prods[i].name);
-		}
-		if ((document.getElementById("GlutenFree").checked == true) && (prods[i].glutenFree == true)){
-			product_names.push(prods[i].name);
-		}
-		if ((document.getElementById("Organic").checked == true) && (prods[i].organic == true)){
-			product_names.push(prods[i].name);
-		}
-		if ((document.getElementById("Vegetarian").checked == false) && (document.getElementById("GlutenFree").checked == false) && (document.getElementById("Organic").checked == false){
+		if ((prods[i].vegetarian == document.getElementById("Vegetarian").checked ) && (prods[i].glutenFree == document.getElementById("GlutenFree").checked) && (prods[i].organic == document.getElementById("Organic").checked )){
 			product_names.push(prods[i].name);
 		}
 	}
-	let unique = [];
-	for (let i=0; i<product_names.length; i++){
-		if unique.indexOf(product_names[i])===-1){
-			unique.push(product_names[i]);
-		}
-	}
-	return unique;
+	return product_names;
 }
 
 // Calculate the total price of items, with received parameter being a list of products
