@@ -20,10 +20,10 @@
   <h3>Client Information</h3>
   <p>Tell us a bit about you.</p>
 	Choose your Preferences:
-	<input type="checkbox" id="Vegetarian" value="Vegetarian" onclick="populateListProductChoices(this.id, 'displayProduct')">Vegetarian</input>
-	<input type="checkbox" id="GlutenFree" value="GlutenFree" onclick="populateListProductChoices(this.id, 'displayProduct')">GlutenFree</input>
-	<input type="checkbox" id="Organic" value="Organic" onclick="populateListProductChoices(this.id, 'displayProduct')">Organic</input>
-
+	<input type="checkbox" id="Vegetarian" value="Vegetarian">Vegetarian</input>
+	<input type="checkbox" id="GlutenFree" value="GlutenFree">GlutenFree</input>
+	<input type="checkbox" id="Organic" value="Organic" checked>Organic</input>
+	<button id="Submit" type="button" class="block" onclick="populateListProductChoices('displayProduct')">
 </div>
 	
 <div id="container" class="tabcontent">
