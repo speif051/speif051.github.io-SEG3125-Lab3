@@ -56,6 +56,10 @@ function populateListProductChoices(slct1, slct2) {
 		label.appendChild(document.createTextNode(productName));
 		s2.appendChild(label);
 		
+		// create a image for the checkbox
+		//var img = document.getElementById(productName);
+		//var bg = document.getElementById("container")
+		
 		// create a breakline node and add in HTML DOM
 		s2.appendChild(document.createElement("br"));    
 	}
