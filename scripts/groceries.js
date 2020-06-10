@@ -87,13 +87,13 @@ var products = [
 function restrictListProducts(prods, restriction) {
 	let product_names = [];
 	for (let i=0; i<prods.length; i+=1) {
-		if ((restriction == "Vegetarian") && (prods[i].vegetarian == true)){
+		if ((document.getElementById("Vegetarian").checked == true) && (prods[i].vegetarian == true)){
 			product_names.push(prods[i].name);
 		}
-		else if ((restriction == "GlutenFree") && (prods[i].glutenFree == true)){
+		else if ((document.getElementById("GlutenFree").checked == true) && (prods[i].glutenFree == true)){
 			product_names.push(prods[i].name);
 		}
-		else if ((restriction == "Organic") && (prods[i].organic == true)){
+		else if ((document.getElementById("Organic").checked == true) && (prods[i].organic == true)){
 			product_names.push(prods[i].name);
 		}
 		else if (restriction == "None"){
