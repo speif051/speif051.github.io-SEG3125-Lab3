@@ -103,10 +103,6 @@ function restrictListProducts(prods, restriction) {
 	return product_names;
 }
 
-function getPrice(prod){
-	return prod.price;
-}
-
 // Calculate the total price of items, with received parameter being a list of products
 function getTotalPrice(chosenProducts) {
 	totalPrice = 0;
