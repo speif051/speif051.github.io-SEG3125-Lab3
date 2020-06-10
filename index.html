@@ -7,6 +7,10 @@
 </head>
 
 <body>
+	
+<div class="start">
+  <button class="Begin" onclick="openInfo(event, "Client")">Begin</button>
+</div>
 
 <!-- Tab content -->
 <div id="Client" class="tab">
@@ -30,6 +34,10 @@
 		<label for="OrganicTrue">True</label>
 	<input type="radio" id="OrganicFalse" name="Organic" value="OrganicFalse">
 		<label for="OrganicFalse">False</label><br>
+	
+	<button id="Next" type="button" class="block" onclick="openInfo(event, "Products")">
+		Next.
+	</Next>
 </div>
 	
 <div id="container" class="tab">
@@ -51,24 +59,23 @@
   <p>We preselected products based on your Preferences.</p>
 	 Choose items to buy:
 	 <div id="displayProduct"></div>
-	<button id="Prev" type="button" class="block" onclick="selectedItems()">
-		Next.
+	<button id="Prev" type="button" class="block" onclick="openInfo(event, "Client")">
+		Previous.
 	</button>
+	<button id="Next" type="button" class="block" onclick="openInfo(event, "Cart")">
+		Next.
+	</Next>
 </div>
 
 <div id="Cart" class="tab">
   <h3>Cart</h3>
   <p>Here is your cart.</p>
   <div id="displayCart"></div>
-</div>
-
-<div id="Buttons">
-	<button id="Prev" type="button" class="block" onclick="showPrev()">
+	<button id="Prev" type="button" class="block" onclick="openInfo(event, "Products")">
 		Previous.
 	</button>
-	<button id="Prev" type="button" class="block" onclick="showNext()">
-		Next.
-	</button>
+</div>
+
 
 <script src="scripts/groceries.js"></script>
 <script src="scripts/main.js"></script>
