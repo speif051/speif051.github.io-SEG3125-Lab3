@@ -19,10 +19,25 @@
 <div id="Client" class="tabcontent">
   <h3>Client Information</h3>
   <p>Tell us a bit about you.</p>
-	Choose your Preferences:
-	<input type="checkbox" id="Vegetarian" value="Vegetarian">Vegetarian</input>
-	<input type="checkbox" id="GlutenFree" value="GlutenFree">GlutenFree</input>
-	<input type="checkbox" id="Organic" value="Organic">Organic</input>
+	Choose your Diet Preferences:
+	<p>Vegetarian: </p>
+	<input type="radio" id="VegetarianTrue" value="Vegetarian">
+		<label for="VegetarianTrue">True</label>
+	<input type="radio" id="VegetarianFalse" value="Vegetarian">
+		<label for="VegetarianFalse">False</label><br>
+	
+	<p>Gluten Free: </p>
+	<input type="radio" id="GlutenFreeTrue" value="GlutenFree">
+		<label for="GlutenFreeTrue">True</label>
+	<input type="radio" id="GlutenFreeFalse" value="GlutenFree">
+		<label for="GlutenFreeFalse">False</label><br>
+	
+	<p>Organic: </p>
+	<input type="radio" id="OrganicTrue" value="Organic">
+		<label for="OrganicTrue">True</label>
+	<input type="radio" id="OrganicFalse" value="OrganicFree">
+		<label for="OrganicFalse">False</label><br>
+	
 	<button id="Submit" type="button" class="block" onclick="populateListProductChoices('displayProduct')">Submit</button>
 </div>
 	
