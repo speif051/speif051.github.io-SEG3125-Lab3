@@ -28,27 +28,12 @@ function openInfo(evt, tabName) {
 
 function populateListProductChoices(slct2) {
     	var s2 = document.getElementById(slct2);
-	
-	var s1 = document.getElementById("Vegetarian");
-	var s3 = document.getElementById("GlutenFree");
-	var s4 = document.getElementById("Organic");
-	
-	
+
 	// s2 represents the <div> in the Products tab, which shows the product list, so we first set it empty
     	s2.innerHTML = "";
 	
-	var optionArray = []
-	// obtain a reduced list of products based on restrictions
-    	if (s1.checked == true){
-		optionArray.push(restrictListProducts(products, s1.value));
-	}
-	if (s3.checked == true){
-		optionArray.push(restrictListProducts(products, s3.value));
-	}
-	if (s4.checked == true){
-		optionArray.push(restrictListProducts(products, s4.value));
-	}
-	
+	var optionArray = restrictListProducts(products);
+
 	// for each item in the array, create a checkbox element, each containing information such as:
 	// <input type="checkbox" name="product" value="Bread">
 	// <label for="Bread">Bread/label><br>
