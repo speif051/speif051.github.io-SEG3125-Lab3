@@ -86,6 +86,7 @@ var products = [
 
 function restrictListProducts(prods, restriction) {
 	let product_names = [];
+	window.alert(5 + 6);
 	for (let i=0; i<prods.length; i+=1) {
 		if ((prods[i].vegetarian == document.getElementById("VegetarianTrue").checked ) && (prods[i].glutenFree == document.getElementById("GlutenFreeTrue").checked) && (prods[i].organic == document.getElementById("OrganicTrue").checked )){
 			product_names.push(prods[i].name);
