@@ -87,7 +87,7 @@ var products = [
 function restrictListProducts(prods, restriction) {
 	let product_names = [];
 	for (let i=0; i<prods.length; i+=1) {
-		if ((prods[i].vegetarian == document.getElementById("Vegetarian").checked ) && (prods[i].glutenFree == document.getElementById("GlutenFree").checked) && (prods[i].organic == document.getElementById("Organic").checked )){
+		if ((prods[i].vegetarian == document.getElementById("VegetarianTrue").checked ) && (prods[i].glutenFree == document.getElementById("GlutenFreeTrue").checked) && (prods[i].organic == document.getElementById("OrganicTrue").checked )){
 			product_names.push(prods[i].name);
 		}
 	}
