@@ -7,39 +7,6 @@
 </head>
 
 <body>
-
-<!-- Tab links, each one with an onclick event associated with it -->
-<div class="tab">
-  <button class="tablinks" onclick="openInfo(event, 'Client')">Client</button>
-  <button class="tablinks" onclick="openInfo(event, 'Products')">Products</button>
-  <button class="tablinks" onclick="openInfo(event, 'Cart')">Cart</button>
-</div>
-
-<!-- Tab content -->
-<div id="Client" class="tabcontent">
-  <h3>Client Information</h3>
-  <p>Tell us a bit about you.</p>
-	Choose your Diet Preferences:
-	<p style="font-size:20px;">Vegetarian: </p>
-	<input type="radio" id="VegetarianTrue" name="Vegetarian" value="VegetarianTrue" select>
-		<label for="VegetarianTrue">True</label>
-	<input type="radio" id="VegetarianFalse" name="Vegetarian" value="VegetarianFalse">
-		<label for="VegetarianFalse">False</label><br>
-	
-	<p style="font-size:20px;">Gluten Free: </p>
-	<input type="radio" id="GlutenFreeTrue" name="GlutenFree" value="GlutenFreeTrue" select>
-		<label for="GlutenFreeTrue">True</label>
-	<input type="radio" id="GlutenFreeFalse" name="GlutenFree" value="GlutenFreeFalse">
-		<label for="GlutenFreeFalse">False</label><br>
-	
-	<p style="font-size:20px;">Organic: </p>
-	<input type="radio" id="OrganicTrue" name="Organic" value="OrganicTrue" select>
-		<label for="OrganicTrue">True</label>
-	<input type="radio" id="OrganicFalse" name="Organic" value="OrganicFalse">
-		<label for="OrganicFalse">False</label><br>
-	
-	<button id="Submit" type="button" class="block" onclick="populateListProductChoices('displayProduct')">Submit</button>
-</div>
 	
 <div id="container" class="tabcontent">
 	<img id="broccoli" src="Images/Broccoli.jpeg" style="width:50px;height:60px;">
@@ -55,6 +22,37 @@
 	<img id="ham" src="Images/ham.jpeg" style="width:50px;height:60px;">
 </div>
 
+<!-- Tab links, each one with an onclick event associated with it -->
+<div class="tab">
+  <button class="tablinks" onclick="openInfo(event, 'Client')">Client</button>
+  <button class="tablinks" onclick="openInfo(event, 'Products')">Products</button>
+  <button class="tablinks" onclick="openInfo(event, 'Cart')">Cart</button>
+</div>
+
+<!-- Tab content -->
+<div id="Client" class="tabcontent">
+  <h3>Client Information</h3>
+  <p>Tell us a bit about you.</p>
+	Choose your Diet Preferences:
+	<p style="font-size:20px;">Vegetarian: </p>
+	<input type="radio" id="VegetarianTrue" name="Vegetarian" value="VegetarianTrue" checked>
+		<label for="VegetarianTrue">True</label>
+	<input type="radio" id="VegetarianFalse" name="Vegetarian" value="VegetarianFalse">
+		<label for="VegetarianFalse">False</label><br>
+	
+	<p style="font-size:20px;">Gluten Free: </p>
+	<input type="radio" id="GlutenFreeTrue" name="GlutenFree" value="GlutenFreeTrue" checked>
+		<label for="GlutenFreeTrue">True</label>
+	<input type="radio" id="GlutenFreeFalse" name="GlutenFree" value="GlutenFreeFalse">
+		<label for="GlutenFreeFalse">False</label><br>
+	
+	<p style="font-size:20px;">Organic: </p>
+	<input type="radio" id="OrganicTrue" name="Organic" value="OrganicTrue" checked>
+		<label for="OrganicTrue">True</label>
+	<input type="radio" id="OrganicFalse" name="Organic" value="OrganicFalse">
+		<label for="OrganicFalse">False</label><br>
+</div>
+	
 <div id="Products" class="tabcontent">
   <h3>Your targeted products</h3>
   <p>We preselected products based on your Preferences.</p>
