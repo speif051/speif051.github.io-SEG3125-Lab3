@@ -90,13 +90,13 @@ function restrictListProducts(prods, restriction) {
 		if ((document.getElementById("Vegetarian").checked == true) && (prods[i].vegetarian == true)){
 			product_names.push(prods[i].name);
 		}
-		else if ((document.getElementById("GlutenFree").checked == true) && (prods[i].glutenFree == true)){
+		if ((document.getElementById("GlutenFree").checked == true) && (prods[i].glutenFree == true)){
 			product_names.push(prods[i].name);
 		}
-		else if ((document.getElementById("Organic").checked == true) && (prods[i].organic == true)){
+		if ((document.getElementById("Organic").checked == true) && (prods[i].organic == true)){
 			product_names.push(prods[i].name);
 		}
-		else{
+		if ((document.getElementById("Vegetarian").checked == false) && (document.getElementById("GlutenFree").checked == false) && (document.getElementById("Organic").checked == false){
 			product_names.push(prods[i].name);
 		}
 	}
