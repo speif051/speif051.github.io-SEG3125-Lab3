@@ -7,7 +7,6 @@ var products = [
 		vegetarian: true,
 		glutenFree: false,
 		organic: true,
-		category: "vegetable",
 		price: 1.45
 	},
 	{
@@ -15,7 +14,6 @@ var products = [
 		vegetarian: true,
 		glutenFree: false,
 		organic: false,
-		category: "other",
 		price: 2.35
 	},
 	{
@@ -23,7 +21,6 @@ var products = [
 		vegetarian: false,
 		glutenFree: true,
 		organic: false,
-		category: "meats",
 		price: 10.00
 	},
 	{
@@ -31,7 +28,6 @@ var products = [
 		vegetarian: true,
 		glutenFree: true,
 		organic: true,
-		category: "grain",
 		price: 2.99
 	},
 	{
@@ -39,7 +35,6 @@ var products = [
 		vegetarian: false,
 		glutenFree: true,
 		organic: false,
-		category: "meats",
 		price: 4.49
 	},
 	{
@@ -47,7 +42,6 @@ var products = [
 		vegetarian: true,
 		glutenFree: false,
 		organic: false,
-		category: "grain",
 		price: 3.00
 	},
 	{
@@ -55,7 +49,6 @@ var products = [
 		vegetarian: true,
 		glutenFree: true,
 		organic: true,
-		category: "fruit",
 		price: .50
 	},
 	{
@@ -63,7 +56,6 @@ var products = [
 		vegetarian: true,
 		glutenFree: true,
 		organic: true,
-		category: "vegetable",
 		price: 1.80
 	},
 	{
@@ -71,7 +63,6 @@ var products = [
 		vegetarian: true,
 		glutenFree: true,
 		organic: false,
-		category: "cooking products",
 		price: 8.00
 	},
 	{
@@ -79,7 +70,6 @@ var products = [
 		vegetarian: true,
 		glutenFree: true,
 		organic: false,
-		category: "dairy",
 		price: 3.20
 	},
 	{
@@ -87,7 +77,6 @@ var products = [
 		vegetarian: false,
 		glutenFree: true,
 		organic: false,
-		category: "meats",
 		price: 14.00
 	},
 ];
@@ -100,7 +89,6 @@ function restrictListProducts(prods, restriction) {
 	for (let i=0; i<prods.length; i+=1) {
 		if ((prods[i].vegetarian == document.getElementById("VegetarianTrue").checked ) && (prods[i].glutenFree == document.getElementById("GlutenFreeTrue").checked) && (prods[i].organic == document.getElementById("OrganicTrue").checked )){
 			product_names.push(prods[i].name);
-
 		}
 	}
 	return product_names;
