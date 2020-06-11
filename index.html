@@ -54,18 +54,7 @@
   <h3>Your targeted products</h3>
   <p>We preselected products based on your Preferences.</p>
 	 Choose items to buy:
-	<button class="accordion">Fruits</button><br>
-	<div class="panel" id="displayProduct[0]"></div>
-	<button class="accordion">Vegetables</button><br>
-	<div class="panel" id="displayProduct[1]"></div>
-	<button class="accordion">Dairy Products</button><br>
-	<div class="panel" id="displayProduct[2]"></div>
-	<button class="accordion">Meats</button><br>
-	<div class="panel" id="displayProduct[3]"></div>
-	<button class="accordion">Juice/Bevereages</button><br>
-	<div class="panel" id="displayProduct[4]"></div>
-	<button class="accordion">Cooking Products</button><br>
-	<div class="panel" id="displayProduct[5]"></div>
+	<div id="displayProduct"></div>
 	
 	<button id="Prev" type="button" class="block" onclick="openInfo(event, 'Client')">
 		Previous.
@@ -74,22 +63,6 @@
 		Next.
 	</Next>
 </div>
-<script>
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
-  });
-}
-</script>
 
 <div id="Cart" class="tabcontent">
   <h3>Cart</h3>
