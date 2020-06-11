@@ -97,12 +97,16 @@ var products = [
 
 function restrictListProducts(prods, restriction) {
 	let product_names = [];
+	let product_prices = [];
+	let product_types = [];
 	for (let i=0; i<prods.length; i+=1) {
 		if ((prods[i].vegetarian == document.getElementById("VegetarianTrue").checked ) && (prods[i].glutenFree == document.getElementById("GlutenFreeTrue").checked) && (prods[i].organic == document.getElementById("OrganicTrue").checked )){
 			product_names.push(prods[i].name);
+			product_prices.push(prods[i].price);
+			product_types.push(prods[i].category);
 		}
 	}
-	return product_names;
+	return [product_names, product_prices, product_types];
 }
 
 // Calculate the total price of items, with received parameter being a list of products
