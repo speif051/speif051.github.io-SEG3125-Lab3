@@ -24,9 +24,13 @@ function populateListProductChoices(slct2) {
     	var s2 = document.getElementById(slct2);
 
 	// s2 represents the <div> in the Products tab, which shows the product list, so we first set it empty
-    	s2.innerHTML = "";
+    	s2.innerHTML = [];
 	
-	var optionArray = restrictListProducts(products);
+	var products = restrictedListProducts(products);
+	
+	var optionArray = products[0];
+	var priceArray = products[1];
+	var TypeArray = products[2];
 
 	// for each item in the array, create a checkbox element, each containing information such as:
 	// <input type="checkbox" name="product" value="Bread">
@@ -46,6 +50,7 @@ function populateListProductChoices(slct2) {
 		var label = document.createElement('label')
 		label.htmlFor = productName;
 		label.appendChild(document.createTextNode(productName));
+		
 		s2.appendChild(label);
 		
 		// create image
